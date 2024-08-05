@@ -13,7 +13,7 @@ $routes = [
     'home' => 'pages/home.php',
     'login' => 'pages/login.php',
     'register' => 'pages/register.php',
-    'product' => 'pages/product.php',
+    'politicas_de_privacidad' => 'pages/politicas de privacidad.php',
     'contact' => 'pages/contact.php',
 ];
 

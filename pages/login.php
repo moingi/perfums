@@ -23,7 +23,7 @@
                 </div>
                 <div class="logpoliticas">
                     <input class="abc" type="checkbox" required>
-                    <p>He leído y acepto las <a href="">Políticas de privacidad</a></p>
+                    <p>He leído y acepto las <a href="/politicas_de_privacidad">Políticas de privacidad</a></p>
                 </div>
                 <input type="submit" value="Iniciar sesión">
                 <div class="logreg">
