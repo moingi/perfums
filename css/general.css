@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Segoe UI';
+}
+.error{
+    display: flex;
+    align-items: center;
+    height: 486px;
+}
+.error h1{
+    margin-left: 100px;
+    font-size: xxx-large;
+    color: var(--col2);
+}
+body{
+    background-color: var(--col1);
+}
+.espaciado {
+    height: 100px;
+    background: linear-gradient(to bottom, var(--col2), var(--col1));
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+.login form{
+    width: 22%;
+    height: 480px;
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login h2{
+    color: var(--col2);
+    font-variant: small-caps;
+    margin: 0px 0px 20px 0px;
+}
+.logentr input{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--col2);
+    color: var(--col1);
+    font-weight: bolder;
+}
+.logentr input::placeholder{
+    color: var(--col1);
+}
+.login input[type="submit"]{
+    width: 100px;
+    height: max-content;
+    margin-top: 15px;
+    padding: 5px;
+    float: right;
+    background-color: var(--col1);
+    color: var(--col2);
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.logpoliticas {
+    display: flex;
+    align-items: center;
+}
+.logpoliticas input {
+    margin: 5px 5px 5px 0px;
+}
+.login p{
+    font-size: small;
+}
+.login a{
+    color: var(--col2);
+    text-decoration: underline;
+}
+.login a:hover {
+    font-weight: bolder;
+}
+.logreg{
+    margin: 70px 0px 0px 0px;
+}
+
+
+
+.register{
+    display: flex;
+    justify-content: center;
+}
+.register form{
+    width: 44%;
+    height: 480px;
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register h2{
+    color: var(--col2);
+    font-variant: small-caps;
+    margin: 0px 0px 20px 0px;
+}
+.regpartes {
+    display: flex;
+}
+.regpartes div{
+    margin: 10px;
+}
+.regentr input{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--col2);
+    color: var(--col1);
+    font-weight: bolder;
+}
+.regentr input::placeholder{
+    color: var(--col1);
+}
+.regsub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regentr input[type="submit"]{
+    height: 50px;
+    width: 40%;
+    background-color: var(--col1);
+    color: var(--col2);
+    border: 2px solid var(--col2);
+    cursor: pointer;
+}
+.reglog{
+    width: 100%;
+    display: flex;
+}
+.reglog p{
+    margin: 0px 0px 0px 80px;
+    font-size: smaller;
+}
+.reglog a{
+    color: var(--col2);
+    text-decoration: underline;
+}
+.reglog a:hover{
+    font-weight: bolder;
+}

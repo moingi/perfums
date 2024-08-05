@@ -1,0 +1,66 @@
+footer{
+
+    width: 100%;
+    height: max-content;
+    background-color: var(--col2);
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.redes hr{
+    width: 500px;
+    height: 3px;
+    margin: 0% 15px 0% 15px;
+    background-color: var(--col1);
+    border: 0;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.logocopy{
+    display: flex;
+    justify-content: center;
+}
+.logocopy p{
+    color: var(--col1);
+}
+.logocopy div{
+    text-align: center;
+}
+.logocopy img{
+    width: 50px;
+    height: 20px;
+}
+.poli{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poli a {
+    width: 10%;
+    height: 30px;
+    margin: 15px 5px 15px 5px;
+    background-color: var(--col2);
+    border: 2px solid var(--col1);
+}
+.poli div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+}
+.poli p{
+    color: var(--col1);
+}
+.poli a:hover{
+    background-color: var(--col1);
+}
+.poli a:hover p{
+    color: var(--col2);
+}

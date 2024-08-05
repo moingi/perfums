@@ -1,0 +1,10 @@
+# Habilitar el uso de mod_rewrite
+RewriteEngine On
+
+# Establecer la base del sitio (ajusta esto si tu proyecto está en un subdirectorio)
+RewriteBase /
+
+# Redirigir las solicitudes a index.php si no existe un archivo o directorio que coincida
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
