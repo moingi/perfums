@@ -11,53 +11,32 @@
 </head>
     <body>
         <?php require __DIR__ . '/../templates/header.html'; ?>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
-        <h1>a</h1>
+        <div class="principal">
+            <?php require __DIR__ . '/../templates/promociones/jpg.php'; ?>
+            <div class="pring"></div>
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
         <?php require __DIR__ . '/../templates/footer.html'; ?>
     </body>
 </html>

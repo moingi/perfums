@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/color.css">
-    <title>Login - Parfums</title>
+    <title>Registro - Parfums</title>
 </head>
 <body>
     <?php require __DIR__ . '/../templates/header.html'; ?>

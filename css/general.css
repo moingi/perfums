@@ -159,3 +159,41 @@ body{
 .reglog a:hover{
     font-weight: bolder;
 }
+
+.principal{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pring{
+    height: 500px;
+    width: 70%;
+    background-color: aqua;
+    margin-top: 5px;
+}
+
+.promjpg{
+    width: 70%;
+    height: 500px;
+}
+
+.politicas{
+    padding: 5% 20% 0% 20%;
+}
+.politicas ul{
+    padding: 10px 0px 10px 0px;
+}
+.politicas ul li{
+    list-style: circle;
+}
+.politicas h1{
+    padding: 0px 0px 20px 0px;
+}
+.politicas h3{
+    padding: 20px 0px 20px 0px;
+}
+.politicas h4{
+    padding: 15px 0px 0px 0px;
+}
