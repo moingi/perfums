@@ -10,7 +10,7 @@
     <title>ERROR 404 - Parfums</title>
 </head>
     <body>
-        <?php require __DIR__ . '/templates/header.html'; ?>
+        <?php require __DIR__ . '/templates/header.php'; ?>
         
         <div class="error">
             <h1>ERROR 404 - No encontramos la página que solicitas</h1>

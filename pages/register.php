@@ -10,7 +10,7 @@
     <title>Registro - Parfums</title>
 </head>
 <body>
-    <?php require __DIR__ . '/../templates/header.html'; ?>
+    <?php require __DIR__ . '/../templates/header.php'; ?>
     <div class="register">
         <form method="POST" action="../db/register_sql.php">
             <h2>Registro de usuario</h2>

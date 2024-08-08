@@ -10,7 +10,7 @@
     <title>Índice - Parfums</title>
 </head>
     <body>
-        <?php require __DIR__ . '/../templates/header.html'; ?>
+        <?php require __DIR__ . '/../templates/header.php'; ?>
         <div class="principal">
             <?php require __DIR__ . '/../templates/promociones/jpg.php'; ?>
             <div class="pring"></div>

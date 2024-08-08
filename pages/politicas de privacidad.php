@@ -10,7 +10,7 @@
     <title>Políticas de privacidad - Parfums</title>
 </head>
     <body>
-        <?php require __DIR__ . '/../templates/header.html'; ?>
+        <?php require __DIR__ . '/../templates/header.php'; ?>
 
         <div class="politicas">
             <h1>Política de Privacidad de Parfums</h1>

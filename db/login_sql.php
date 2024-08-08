@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $connect = mysqli_connect("localhost","root","", "db_perfums");
 
 if(!$connect){
@@ -21,6 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nr = mysqli_num_rows($query);
 
         if($nr == 1){
+
+            $fila = $query->fetch_assoc();
+            
+            $_SESSION['nombre'] = $fila['nombre'];
+            $_SESSION['apellido'] = $fila['lastname'];
+
             echo '<script type="text/javascript">
             alert("Inicio de sesión exitoso");
             window.location.href = "/";

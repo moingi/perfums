@@ -10,7 +10,7 @@
     <title>Login - Parfums</title>
 </head>
 <body>
-    <?php require __DIR__ . '/../templates/header.html'; ?>
+    <?php require __DIR__ . '/../templates/header.php'; ?>
     <div class="login">
         <form method="POST" action="../db/login_sql.php">
             <h2>Inicio de sesión</h2>

@@ -1,3 +1,8 @@
+<?php
+    session_start();
+?>
+
+
 <header>
     <div class="headprin">
         <div class="one">
@@ -15,7 +20,19 @@
 
         </div>
         <div class="loginbot">
-            <a href="login"><img src="../img/header/login_black.png" alt=""></a>
+            <?php
+            if (isset($_SESSION['nombre'])) {
+                // Si el usuario ha iniciado sesión, muestra su nombre
+                echo ''. $_SESSION['nombre'].' '.$_SESSION['apellido'];
+                echo '<a href="../db/logout.php">Cerrar sesión</a>';
+                
+
+            } else {
+                // Si no ha iniciado sesión, muestra el enlace de "Inicia sesión"
+                echo '<a href="login"><img src="../img/header/login_black.png" alt="">';
+                echo 'Iniciar sesión</a>';
+            }
+            ?>
         </div>
     </div>
     <div>
