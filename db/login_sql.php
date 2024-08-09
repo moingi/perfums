@@ -28,6 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             $_SESSION['nombre'] = $fila['nombre'];
             $_SESSION['apellido'] = $fila['lastname'];
+            $_SESSION['email'] = $fila['mail'];
+            $_SESSION['fecha'] = $fila['fecha_nacimiento'];
 
             echo '<script type="text/javascript">
             alert("Inicio de sesión exitoso");

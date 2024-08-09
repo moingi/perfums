@@ -197,3 +197,43 @@ body{
 .politicas h4{
     padding: 15px 0px 0px 0px;
 }
+
+
+.infouser{
+    display: flex;
+    justify-content: center;
+}
+.infouser > div{
+    width: 40%;
+    height: 530px;
+    padding: 10px;
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+}
+.infouser input{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--col2);
+    color: var(--col1);
+    font-weight: bolder;
+}
+.infouser input[type="submit"]{
+    width: 150px;
+    height: max-content;
+    margin-top: 15px;
+    padding: 5px;
+    float: right;
+    background-color: var(--col1);
+    color: var(--col2);
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.espacioforms{
+    height: 50px;
+}

@@ -14,7 +14,7 @@
         'login' => 'pages/login.php',
         'register' => 'pages/register.php',
         'politicas-de-privacidad' => 'pages/politicas de privacidad.php',
-        'contact' => 'pages/contact.php',
+        'usuario' => 'pages/user.php',
     ];
 
     // Verifica si la ruta existe en la lista de rutas permitidas

@@ -2,7 +2,6 @@
     session_start();
 ?>
 
-
 <header>
     <div class="headprin">
         <div class="one">
@@ -23,14 +22,13 @@
             <?php
             if (isset($_SESSION['nombre'])) {
                 // Si el usuario ha iniciado sesión, muestra su nombre
-                echo ''. $_SESSION['nombre'].' '.$_SESSION['apellido'];
-                echo '<a href="../db/logout.php">Cerrar sesión</a>';
+                echo '<a href="/usuario">'. $_SESSION['nombre'].' '.$_SESSION['apellido'].'</a>';
+                echo '<a href="../db/logout.php">Cerrar seesion</a>';
                 
 
             } else {
                 // Si no ha iniciado sesión, muestra el enlace de "Inicia sesión"
-                echo '<a href="login"><img src="../img/header/login_black.png" alt="">';
-                echo 'Iniciar sesión</a>';
+                echo '<a href="login"><img src="../img/header/login_black.png" alt=""></a>';
             }
             ?>
         </div>
