@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+  }
+  
+  .navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #575757;
+  }
+  
+  /* Estilo para pantallas grandes (PC) */
+  @media (min-width: 768px) {
+    .navbar {
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
+    
+    .menu-toggle {
+      display: none; /* Ocultar el botón de menú en pantallas grandes */
+    }
+  }
+  
+  /* Estilo para pantallas pequeñas (móviles) */
+  @media (max-width: 767px) {
+    .navbar {
+      position: fixed;
+      left: -250px;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      transition: left 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li a {
+      padding: 20px;
+    }
+  
+    /* Botón para abrir/cerrar el menú */
+    .menu-toggle {
+      position: fixed;
+      left: 0;
+      top: 0px;
+      font-size: 30px;
+      color: white;
+      background-color: #333;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: left 0.3s ease; /* El botón también se moverá con el menú */
+      z-index: 2; /* Asegura que el botón esté por delante del menú */
+    }
+  
+    /* Cuando el menú esté abierto, mueve el menú y el botón */
+    .navbar.open {
+      left: 0;
+    }
+  
+    .menu-toggle.open {
+      left: 200px; /* El botón se mueve junto con el menú cuando está abierto */
+    }
+  }
+  

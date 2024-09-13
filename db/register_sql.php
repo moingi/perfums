@@ -25,7 +25,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             $query = mysqli_query($connect,"INSERT INTO users (nombre, lastname, mail, passwd, fecha_nacimiento) VALUES ('".$nombre."','".$apellido."','".$mail."','".$pass."','".$fecha_nac."')");
 
-            header("Location: /");
+            echo '<script type="text/javascript">
+                    alert("Usuario registrado..");
+                    window.location.href = "/login";
+                </script>';
+
             exit();
         }
 

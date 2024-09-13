@@ -2,67 +2,57 @@
     session_start();
 ?>
 
-<header>
-    <div class="headprin">
-        <div class="one">
-            <!-- Imagen pagina -->
+<header class="p-3 mb-4 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 one">
             <a href="/"><img src="../img/pruebas.png" alt="imagen prueba"></a>
         </div>
-        <div class="form">
-            <input id="searchButton" class="subfoto" type="image" src="../img/header/lupa_black.png"/>
-            <form id="searchContainer">
-                <input class="busca" type="text"/>
-                <input class="sub" type="image" src="../img/header/flecha_derecha.png">
-            </form>
-            
-            <script src="../scripts/buscador.js"></script>
 
-        </div>
-        <div class="loginbot">
-            <?php
-            if (isset($_SESSION['nombre'])) {
-                // Si el usuario ha iniciado sesión, muestra su nombre
-                echo '<a href="/usuario">'. $_SESSION['nombre'].' '.$_SESSION['apellido'].'</a>';
-                echo '<a href="../db/logout.php">Cerrar seesion</a>';
-                
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
 
-            } else {
-                // Si no ha iniciado sesión, muestra el enlace de "Inicia sesión"
-                echo '<a href="login"><img src="../img/header/login_black.png" alt=""></a>';
-            }
+        <?php
+                if (isset($_SESSION['nombre'])) {
+                    // Si el usuario ha iniciado sesión, muestra su nombre
+                    //echo '<a href="/usuario" class="">'. $_SESSION['nombre'].' <br> '.$_SESSION['apellido'].'</a>';                
+                    ?>
+                    <div class="dropdown text-end">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../img/header/login_black.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small">
+                            <li><a class="dropdown-item" href="/usuario">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../db/logout.php">Sign out</a></li>
+                        </ul>
+                    </div>
+                    <?php
+                } else {
+                    // Si no ha iniciado sesión, muestra el enlace de "Inicia sesión"
+                    ?>
+                    <div class="col-md-2 text-end">
+                        <a href="/login"><button type="button" class="btn btn-success me-2">Login</button></a>
+                        <a href="/register"><button type="button" class="btn btn-success me-2">Sign-up</button></a>
+                    </div>
+                    <?php
+                }
             ?>
-        </div>
+      </div>
     </div>
     <div>
-        <nav>
-            <ul class="menu">
-                <li>Marcas
-                    <ul class="submenu">
-                        <li>Lorem Ipsum</li>
-                    </ul>
-                </li>
-                <li>Man
-                    <ul class="submenu">
-                        <li> Ipsum</li>
-                    </ul>
-                </li>
-                <li>Woman
-                    <ul class="submenu">
-                        <li>Lorem </li>
-                    </ul>
-                </li>
-                <li>Perfumes
-                    <ul class="submenu">
-                        <li>Lorem Ipsum</li>
-                    </ul>
-                </li>
-                <li>Tiendas
-                    <ul class="submenu">
-                        <li>Lorem Ipsum</li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="#home">Marcas</a></li>
+      <li><a href="#about">Man</a></li>
+      <li><a href="#services">Woman</a></li>
+      <li><a href="#contact">Perfumes</a></li>
+      <li><a href="#contact">Tiendas</a></li>
+    </ul>
+  </nav>
+
+  <script src="../scripts/menu_mov.js"></script>
     </div>
-</header>
-<div class="espaciado"></div>
+  </header>

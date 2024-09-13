@@ -42,11 +42,12 @@ footer img {
     justify-content: center;
 }
 .poli a {
-    width: 10%;
     height: 30px;
     margin: 15px 5px 15px 5px;
+    padding: 0.5rem;
     background-color: var(--col2);
     border: 2px solid var(--col1);
+    text-decoration: none !important;
 }
 .poli div{
     height: 100%;
@@ -57,6 +58,7 @@ footer img {
 }
 .poli p{
     color: var(--col1);
+    margin-bottom: 0% !important;
 }
 .poli a:hover{
     background-color: var(--col1);

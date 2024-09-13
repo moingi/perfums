@@ -25,12 +25,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             $query = mysqli_query($connect,"UPDATE users SET passwd='".$newpass."' WHERE nombre='".$_SESSION['nombre']."'");
 
-            header("Location: /usuario");
+            echo '<script type="text/javascript">
+                alert("Cambio de contraseña realizado correctamente");
+                window.location.href = "/usuario";
+            </script>';
             exit();
         }
 
-} else {
-    echo "Please submit the form.";
 }
 
 ?>

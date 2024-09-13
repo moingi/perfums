@@ -14,17 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fecha_nac = $_POST["fecha"];
         $mail = $_POST["mail"];
 
-        
         $query = mysqli_query($connect,"SELECT * FROM users WHERE mail='".$mail."'");
         $nr = mysqli_num_rows($query);
 
-        if($nr == 1){
-            echo '<script type="text/javascript">
-            alert("Este correo electronico ya esta en uso.");
-            window.location.href = "/usuario";
-          </script>';
-        } else {
-            $query = mysqli_query($connect,"UPDATE users SET nombre='".$nombre."', lastname='".$apellido."', mail='".$mail."', fecha_nacimiento='".$fecha_nac."' WHERE nombre='".$_SESSION['nombre']."'");
+        if($nr == 0){
+            $query1 = mysqli_query($connect,"UPDATE users SET nombre='".$nombre."', lastname='".$apellido."', mail='".$mail."', fecha_nacimiento='".$fecha_nac."' WHERE nombre='".$_SESSION['nombre']."'");
 
             $query2 = mysqli_query($connect,"SELECT * FROM users WHERE mail='".$mail."'");
 
@@ -35,8 +29,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['email'] = $fila['mail'];
             $_SESSION['fecha'] = $fila['fecha_nacimiento'];
 
-            header("Location: /usuario");
+            echo '<script type="text/javascript">
+            alert("Cambios de usuario realizados correctamente");
+            window.location.href = "/usuario";
+            </script>';
+
             exit();
+        } else {
+            echo '<script type="text/javascript">
+            alert("Este correo ya esta en uso por otro usuario");
+            window.location.href = "/usuario";
+            </script>';
         }
 
 } else {

@@ -8,6 +8,10 @@ $url_actual = (isset($_SERVER['HTTP_REFERER'])) ? $_SERVER['HTTP_REFERER'] : '/'
 session_destroy();
 
 // Redirige al usuario a la URL actual
-header("Location: " . $url_actual);
+echo'<script type="text/javascript">
+        alert("Sesión cerrada correctamente");
+        window.location.href = "/login";
+    </script>';
+
 exit();
 ?>

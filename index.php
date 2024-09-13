@@ -15,6 +15,7 @@
         'register' => 'pages/register.php',
         'politicas-de-privacidad' => 'pages/politicas de privacidad.php',
         'usuario' => 'pages/user.php',
+        'carrito' => 'pages/carrito.php'
     ];
 
     // Verifica si la ruta existe en la lista de rutas permitidas

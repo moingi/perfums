@@ -6,6 +6,9 @@
     color: black;
     font-family: 'Segoe UI';
 }
+body::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+}
 .error{
     display: flex;
     align-items: center;
@@ -17,7 +20,7 @@
     color: var(--col2);
 }
 body{
-    background-color: var(--col1);
+    background-color: var(--col1) !important;
 }
 .espaciado {
     height: 100px;
@@ -28,9 +31,7 @@ body{
     justify-content: center;
 }
 .login form{
-    width: 22%;
     height: 480px;
-    border: 2px solid var(--col2);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -41,6 +42,9 @@ body{
     color: var(--col2);
     font-variant: small-caps;
     margin: 0px 0px 20px 0px;
+}
+.button-submit{
+    width: 5rem !important;
 }
 .logentr input{
     width: 300px;
@@ -205,12 +209,12 @@ body{
 }
 .infouser > div{
     width: 40%;
-    height: 530px;
+    height: 600px;
     padding: 10px;
     border: 2px solid var(--col2);
     border-radius: 5px;
 }
-.infouser input{
+.inpusers{
     width: 300px;
     height: 30px;
     margin: 10px;
@@ -221,7 +225,7 @@ body{
     color: var(--col1);
     font-weight: bolder;
 }
-.infouser input[type="submit"]{
+.inpuser input[type="submit"]{
     width: 150px;
     height: max-content;
     margin-top: 15px;
@@ -235,5 +239,22 @@ body{
     cursor: pointer;
 }
 .espacioforms{
-    height: 50px;
+    height: 60px;
+}
+.out{
+    width: 150px;
+    height: max-content;
+    margin-top: 15px;
+    padding: 5px;
+    float: right;
+    background-color: var(--col1);
+    color: var(--col4);
+    border: 2px solid var(--col4);
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.out:hover {
+    background-color: var(--col4);
+    color: var(--col1);
 }
