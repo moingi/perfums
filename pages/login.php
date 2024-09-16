@@ -14,40 +14,24 @@
 <body>
     <?php require __DIR__ . '/../templates/header.php'; ?>
     <div class="login">
-        <!-- <form method="POST" action="../db/login_sql.php">
-            <h2>Inicio de sesión</h2>
-            <div>
-                <div class="logentr">
-                    <input type="text" placeholder="Correo electrónico:" name="txtnombre" required>
-                </div>
-                <div class="logentr">
-                    <input type="password" placeholder="Contraseña:" name="txtpasswd" required>
-                </div>
-                <input type="submit" value="Iniciar sesión">
-                <div class="logreg">
-                    <p>No tienes cuanta? <a href="register">Regístrate</a></p>
-                </div>
-            </div> -->
-            <main class="form-signin w-100 m-auto">
-                <form method="POST" action="../db/login_sql.php">
-                    <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
-                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-                    <div class="form-floating">
+        <main class="form-signin w-100 m-auto">
+            <form method="POST" action="../db/login_sql.php">
+                <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>
+                <div class="form-floating">
                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="txtnombre">
-                    <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating">
+                    <label for="floatingInput">Correo electrónico</label>
+                </div>
+                <div class="form-floating">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="txtpasswd">
-                    <label for="floatingPassword">Password</label>
-                    </div>
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
 
-                    <div class="form-check text-start my-3">
-                    </div>
-                    <button class="btn btn-primary py-2 button-submit" type="submit">Sign in</button>
-                    <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
-                </form>
-            </main>
+                <div class="form-check text-start my-3">
+                </div>
+                <button class="btn btn-primary py-2 button-submit" type="submit">Iniciar sesión</button>
+            </form>
+        </main>
     </div>
 
     

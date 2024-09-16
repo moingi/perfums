@@ -14,7 +14,7 @@
 <body>
     <?php require __DIR__ . '/../templates/header.php'; ?>
     <div class="register">
-        <form method="POST" action="../db/register_sql.php">
+        <!-- <form method="POST" action="../db/register_sql.php">
             <h2>Registro de usuario</h2>
                 <div class="regpartes">
                     <div>
@@ -43,8 +43,49 @@
                 <div class="reglog">
                     <p>Ya tienes cuenta? <a href="login">Inicia sesión</a></p>
                 </div>
-            </form>
-    </div>
+            </form> -->
+    
+            <main class="form-signin m-auto">
+            
+                <form method="POST" action="../db/register_sql.php">
+                    <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
+                    <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>
+                    <div class="regdis">
+                        <div class="form-floating">
+                            <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="name@example.com" name="txtnombre" required>
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" name="apell" class="form-control" id="floatingPassword" placeholder="Password" name="txtpasswd" required>
+                            <label for="floatingPassword">Apellido</label>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="date" name="fecha" class="form-control" id="floatingInput" name="txtnombre" required>
+                        <label for="floatingPassword">Fecha de nacimiento:</label>
+                        </div>
+                
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="mail" required>
+                        <label for="floatingPassword">Correo electronico</label>
+                    </div>
+                
+                    <div class="regdis">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com" name="contrasena" required>
+                            <label for="floatingInput">Contraseña</label>
+                        </div>
+                    </div>
+                    <div class="form-check text-start my-3">
+                    </div>
+                    <button class="btn btn-primary py-2 button-submit" type="submit">Registrar usuario</button>    
+                </form>
+            </main>
+    
+    
+        </div>
+
+
     <?php require __DIR__ . '/../templates/footer.html'; ?>
     </body>
 </html>

@@ -122,6 +122,7 @@ header form{
     text-align: center;
     padding: 14px 60px;
     text-decoration: none;
+    border: 1px solid var(--col1);
   }
   
   .navbar ul li a:hover {
@@ -163,6 +164,7 @@ header form{
   
     .navbar ul li a {
       padding: 20px;
+      border: 0px;
     }
   
     /* Botón para abrir/cerrar el menú */
@@ -186,9 +188,11 @@ header form{
         display: flex !important;
         justify-content: flex-start !important;
         margin-top: 0rem;
+        z-index: 5;
     }
   
     .menu-toggle.open {
       left: 190px; /* El botón se mueve junto con el menú cuando está abierto */
+      z-index: 10;
     }
   }
