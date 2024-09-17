@@ -70,6 +70,17 @@ body{
     display: flex;
 }
 
+@media (max-width: 570px) {
+    .register main{
+        width: auto;
+    }
+}
+
+.register button[type="submit"]{
+    background-color: var(--col2) !important;
+    border: 1px solid var(--col2) !important;
+}
+
 
 .principal{
     height: auto;

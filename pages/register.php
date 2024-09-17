@@ -14,39 +14,7 @@
 <body>
     <?php require __DIR__ . '/../templates/header.php'; ?>
     <div class="register">
-        <!-- <form method="POST" action="../db/register_sql.php">
-            <h2>Registro de usuario</h2>
-                <div class="regpartes">
-                    <div>
-                        <div class="regentr">
-                            <input type="text" name="nombre" placeholder="Nombre:" name="txtnombre" required>
-                        </div>
-                        <div class="regentr">
-                            <input type="text" name="apell" placeholder="Apellidos:" name="txtnombre" required>
-                        </div>
-                        <div class="regentr">
-                            <input type="date" name="fecha" placeholder="Fecha de nacimiento: (XX/XX/XXXX)" name="txtnombre" required>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="regentr">
-                            <input type="text" name="mail" placeholder="Correo electronico:" name="txtnombre" required>
-                        </div>
-                        <div class="regentr">
-                            <input type="password" name="contrasena" placeholder="Contraseña:" name="txtnombre" required>
-                        </div>
-                        <div class="regentr regsub">
-                            <input type="submit" value="Registrar usuario">
-                        </div>
-                    </div>
-                </div>
-                <div class="reglog">
-                    <p>Ya tienes cuenta? <a href="login">Inicia sesión</a></p>
-                </div>
-            </form> -->
-    
             <main class="form-signin m-auto">
-            
                 <form method="POST" action="../db/register_sql.php">
                     <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
                     <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>

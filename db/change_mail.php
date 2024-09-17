@@ -9,21 +9,16 @@ if(!$connect){
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $nombre = $_POST["nombre"];
-        $apellido = $_POST["apell"];
-        $fecha_nac = $_POST["fecha"];
+        $mail = $_POST["mail"];
 
 
-
-            $query1 = mysqli_query($connect,"UPDATE users SET nombre='".$nombre."', lastname='".$apellido."', fecha_nacimiento='".$fecha_nac."' WHERE nombre='".$_SESSION['nombre']."'");
+            $query1 = mysqli_query($connect,"UPDATE users SET mail='".$mail."' WHERE mail='".$_SESSION['email']."'");
 
             $query2 = mysqli_query($connect,"SELECT * FROM users WHERE mail='".$_SESSION['email']."'");
 
             $fila = $query2->fetch_assoc();
             
-            $_SESSION['nombre'] = $fila['nombre'];
-            $_SESSION['apellido'] = $fila['lastname'];
-            $_SESSION['fecha'] = $fila['fecha_nacimiento'];
+            $_SESSION['mail'] = $fila['mail'];
 
             echo '<script type="text/javascript">
             alert("Cambios de usuario realizados correctamente");
