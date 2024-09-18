@@ -12,9 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $mail = $_POST["mail"];
 
 
-            $query1 = mysqli_query($connect,"UPDATE users SET mail='".$mail."' WHERE mail='".$_SESSION['email']."'");
+            $query1 = mysqli_query($connect,"UPDATE users SET mail='".$mail."' WHERE mail='".$_SESSION['mail']."'");
 
-            $query2 = mysqli_query($connect,"SELECT * FROM users WHERE mail='".$_SESSION['email']."'");
+            $query2 = mysqli_query($connect,"SELECT * FROM users WHERE id='".$_SESSION['id']."'");
 
             $fila = $query2->fetch_assoc();
             

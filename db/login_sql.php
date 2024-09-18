@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             $fila = $query->fetch_assoc();
             
+            $_SESSION['id']=$fila['id'];
             $_SESSION['nombre'] = $fila['nombre'];
             $_SESSION['apellido'] = $fila['lastname'];
             $_SESSION['mail'] = $fila['mail'];

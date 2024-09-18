@@ -68,6 +68,7 @@ body{
 
 .regdis{
     display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 570px) {
@@ -80,7 +81,6 @@ body{
     background-color: var(--col2) !important;
     border: 1px solid var(--col2) !important;
 }
-
 
 .principal{
     height: auto;
@@ -124,13 +124,14 @@ body{
 .infouser{
     display: flex;
     justify-content: center;
-}
-.infouser > div{
-    width: 40%;
-    height: 600px;
-    padding: 10px;
+    width: 40rem;
+    padding: 3rem;
     border: 2px solid var(--col2);
     border-radius: 5px;
+}
+.infouser button[type="submit"]{
+    background-color: var(--col2) !important;
+    border: 1px solid var(--col2) !important;
 }
 .inpusers{
     width: 300px;

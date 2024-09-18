@@ -14,10 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fecha_nac = $_POST["fecha"];
 
 
-
             $query1 = mysqli_query($connect,"UPDATE users SET nombre='".$nombre."', lastname='".$apellido."', fecha_nacimiento='".$fecha_nac."' WHERE nombre='".$_SESSION['nombre']."'");
 
-            $query2 = mysqli_query($connect,"SELECT * FROM users WHERE mail='".$_SESSION['email']."'");
+            $query2 = mysqli_query($connect,"SELECT * FROM users WHERE id='".$_SESSION['id']."'");
 
             $fila = $query2->fetch_assoc();
             
