@@ -28,7 +28,7 @@
         <?php
           } else {
         ?>
-        <div class="col-md-2 text-end">
+        <div class="col-md-3 text-center">
           <a href="/login"><button type="button" class="btn btn-success me-2">Login</button></a>
           <a href="/register"><button type="button" class="btn btn-success me-2">Sign-up</button></a>
         </div>

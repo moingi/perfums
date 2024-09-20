@@ -17,7 +17,7 @@
             <main class="form-signin m-auto">
                 <form method="POST" action="../db/register_sql.php">
                     <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
-                    <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>
+                    <h1 class="h3 mb-3 fw-normal">Registro de usuario</h1>
                     <div class="regdis">
                         <div class="form-floating">
                             <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="name@example.com" name="txtnombre" required>
@@ -34,26 +34,19 @@
                         </div>
                 
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="mail" required>
+                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="mail" required>
                         <label for="floatingPassword">Correo electronico</label>
                     </div>
-                
-                    <div class="regdis">
-                        <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com" name="contrasena" required>
-                            <label for="floatingInput">Contraseña</label>
-                        </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com" name="contrasena" required>
+                        <label for="floatingInput">Contraseña</label>
                     </div>
                     <div class="form-check text-start my-3">
                     </div>
                     <button class="btn btn-primary py-2 button-submit" type="submit">Registrar usuario</button>    
                 </form>
             </main>
-    
-    
         </div>
-
-
     <?php require __DIR__ . '/../templates/footer.html'; ?>
     </body>
 </html>

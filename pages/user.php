@@ -16,8 +16,8 @@
         <div class="regdis">
             <div class="infouser">
                 <main class="m-auto">
-                    <h1 class="h3 mb-3 fw-normal">Información del usuario</h1>
-                    <h3>Datos personales</h3>
+                    <h1 class="h3 mb-3">Información del usuario</h1>
+                    <h3 class="fw-normal">Datos personales</h3>
                     <form method="POST" action="../db/upload_user.php">
                         <div class="regdis">
                             <div class="form-floating">
@@ -42,10 +42,10 @@
                         <button class="btn btn-primary py-2 button-submit" type="submit">Actualizar información</button>    
                     </form>
                     <br>
-                    <h3>Correo electrónico</h3>
+                    <h3 class="fw-normal">Correo electrónico</h3>
                     <form method="POST" action="../db/change_mail.php">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password" name="mail" required>
+                            <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="mail" required>
                             <label for="floatingInput">
                                 <?php 
                                     echo $_SESSION['mail'];
@@ -55,7 +55,7 @@
                         <button class="btn btn-primary py-2 button-submit" type="submit">Actualizar correo electrónico</button>   
                     </form>
                     <br>
-                    <h3>Contraseña</h3>
+                    <h3 class="fw-normal">Contraseña</h3>
                     <form method="POST" action="../db/change_passwd.php">
                         <div class="regdis">
                             <div class="form-floating">
@@ -70,7 +70,6 @@
                         <button class="btn btn-primary py-2 button-submit" type="submit">Actualizar contraseña</button>    
                     </form>
                 </main>
-        
     
             </div>
         </div>

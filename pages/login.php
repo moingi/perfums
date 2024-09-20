@@ -19,7 +19,7 @@
                 <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
                 <h1 class="h3 mb-3 fw-normal">Inicio de sesión</h1>
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="txtnombre">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="txtnombre">
                     <label for="floatingInput">Correo electrónico</label>
                 </div>
                 <div class="form-floating">

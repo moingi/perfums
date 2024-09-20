@@ -29,6 +29,7 @@ body{
 .login{
     display: flex;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 .login form{
     height: 600px;
@@ -54,9 +55,13 @@ body{
     justify-content: center;
 }
 
+.register {
+    margin-bottom: 1.5rem;
+}
 
 .register main{
     height: 600px;
+    padding: 1rem;
     border: 1px solid var(--col2);
     border-radius: 5px;
     display: flex;
@@ -130,6 +135,7 @@ body{
     border-radius: 5px;
 }
 .infouser button[type="submit"]{
+    margin-top: 1rem;
     background-color: var(--col2) !important;
     border: 1px solid var(--col2) !important;
 }
