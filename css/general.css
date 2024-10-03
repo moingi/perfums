@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Segoe UI';
+}
+body::-webkit-scrollbar {
+    display: none; /*Oculta la barra de desplazamiento */
+}
+.error{
+    display: flex;
+    align-items: center;
+    height: 486px;
+}
+.error h1{
+    margin-left: 100px;
+    font-size: xxx-large;
+    color: var(--col2);
+}
+body{
+    background-color: var(--col1) !important;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.login form{
+    height: 600px;
+    border: 1px solid var(--col2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+@media (max-width: 991px) {
+    .login form{
+        margin: 1rem;
+    }
+}
+.login button[type="submit"]{
+    background-color: var(--col2) !important;
+    border: 1px solid var(--col2) !important;
+}
+.form-signin{
+    display: flex;
+    justify-content: center;
+}
+
+.register {
+    margin-bottom: 1.5rem;
+}
+
+.register main{
+    height: 600px;
+    padding: 1rem;
+    border: 1px solid var(--col2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.regdisesp{
+    margin-bottom: 1.5rem;
+}
+
+.regdis{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 570px) {
+    .register main{
+        width: auto;
+    }
+}
+
+.register button[type="submit"]{
+    background-color: var(--col2) !important;
+    border: 1px solid var(--col2) !important;
+}
+
+.principal{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pring{
+    height: 500px;
+    width: 70%;
+    background-color: aqua;
+    margin-top: 5px;
+}
+
+.promjpg{
+    width: 70%;
+    height: 500px;
+}
+
+.politicas{
+    padding: 5% 20% 0% 20%;
+}
+.politicas ul{
+    padding: 10px 0px 10px 0px;
+}
+.politicas ul li{
+    list-style: circle;
+}
+.politicas h1{
+    padding: 0px 0px 20px 0px;
+}
+.politicas h3{
+    padding: 20px 0px 20px 0px;
+}
+.politicas h4{
+    padding: 15px 0px 0px 0px;
+}
+
+
+.infouser{
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    padding: 3rem;
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+}
+.infouser button[type="submit"]{
+    margin-top: 1rem;
+    background-color: var(--col2) !important;
+    border: 1px solid var(--col2) !important;
+}
+.inpusers{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--col2);
+    color: var(--col1);
+    font-weight: bolder;
+}
+.inpuser input[type="submit"]{
+    width: 150px;
+    height: max-content;
+    margin-top: 15px;
+    padding: 5px;
+    float: right;
+    background-color: var(--col1);
+    color: var(--col2);
+    border: 2px solid var(--col2);
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.espacioforms{
+    height: 60px;
+}
+.out{
+    width: 150px;
+    height: max-content;
+    margin-top: 15px;
+    padding: 5px;
+    float: right;
+    background-color: var(--col1);
+    color: var(--col4);
+    border: 2px solid var(--col4);
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.out:hover {
+    background-color: var(--col4);
+    color: var(--col1);
+}

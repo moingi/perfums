@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/color.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Registro - Lorem</title>
+</head>
+<body>
+    <?php require __DIR__ . '/../templates/header.php'; ?>
+    <div class="register">
+            <main class="form-signin m-auto">
+                <form method="POST" action="../db/register_sql.php">
+                    <img class="mb-4" src="../img/pruebas.png" alt="" width="72" height="57">
+                    <h1 class="h3 mb-3 fw-normal">Registro de usuario</h1>
+                    <div class="regdis">
+                        <div class="form-floating">
+                            <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="" name="txtnombre" required>
+                            <label for="floatingInput">Nombre</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" name="apell" class="form-control" id="floatingPassword" placeholder="Password" name="txtpasswd" required>
+                            <label for="floatingPassword">Apellido</label>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="date" name="fecha" class="form-control" id="floatingInput" name="txtnombre" required>
+                        <label for="floatingPassword">Fecha de nacimiento:</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingPassword" placeholder="Password" name="mail" required>
+                        <label for="floatingPassword">Correo electronico</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com" name="contrasena" required>
+                        <label for="floatingInput">Contraseña</label>
+                    </div>
+                    <div class="form-check text-start my-1"></div>
+                    <div class="">
+                        <label for="floatingInput">
+                            <input type="checkbox" class="" name="politicas de privaicidad" required>
+                            Acepto las <a href="/politicas-de-privacidad" target="_blank">Políticas de privacidad</a>
+                        </label>
+                    </div>
+                    <div class="form-check text-start my-1"></div>
+                    <button class="btn btn-primary py-2 button-submit" type="submit">Registrar usuario</button>    
+                </form>
+            </main>
+        </div>
+    <?php require __DIR__ . '/../templates/footer.html'; ?>
+    </body>
+</html>
