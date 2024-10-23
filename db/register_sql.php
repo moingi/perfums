@@ -1,10 +1,6 @@
 <?php
 
-$connect = mysqli_connect("localhost","root","", "db_perfums");
-
-if(!$connect){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+require_once("connect.php");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nombre = $_POST["nombre"];

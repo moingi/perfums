@@ -41,11 +41,11 @@
     <button class="menu-toggle" id="menuToggle">&#9776;</button>
   <nav class="navbar" id="navbar">
     <ul>
-      <li><a href="#home">Lorem</a></li>
-      <li><a href="#about">Lorem</a></li>
-      <li><a href="#services">Lorem</a></li>
-      <li><a href="#contact">Lorem</a></li>
-      <li><a href="#contact">Lorem</a></li>
+      <li><a href="/listado?categoria=man">Hombre</a></li>
+      <li><a href="/listado?categoria=woman">Mujer</a></li>
+      <li><a href="/listado">Perfumes</a></li>
+      <li><a href="/listado">Marcas</a></li>
+      <li><a href="#contact">Tienda</a></li>
     </ul>
   </nav>
 
