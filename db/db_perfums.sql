@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-09-2024 a las 13:00:09
+-- Tiempo de generación: 23-10-2024 a las 15:27:13
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -20,6 +20,37 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `db_perfums`
 --
+CREATE DATABASE IF NOT EXISTS `db_perfums` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `db_perfums`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `perfumes`
+--
+
+DROP TABLE IF EXISTS `perfumes`;
+CREATE TABLE `perfumes` (
+  `id_perf` int(255) NOT NULL,
+  `name_perf` varchar(255) NOT NULL,
+  `marca_perf` varchar(255) NOT NULL,
+  `disenador_perf` varchar(255) NOT NULL,
+  `genero_perf` varchar(255) NOT NULL,
+  `imagen_perf` varchar(255) NOT NULL,
+  `precio_perf` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `perfumes`
+--
+
+INSERT INTO `perfumes` (`id_perf`, `name_perf`, `marca_perf`, `disenador_perf`, `genero_perf`, `imagen_perf`, `precio_perf`) VALUES
+(1, 'Jean Paul', 'JPG', 'Jean', 'woman', 'pruebas.png', '0'),
+(2, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(3, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(4, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(5, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(6, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0');
 
 -- --------------------------------------------------------
 
@@ -27,6 +58,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `nombre` varchar(255) DEFAULT NULL,
@@ -41,11 +73,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nombre`, `lastname`, `mail`, `passwd`, `fecha_nacimiento`) VALUES
-(34, 'test', 'test', 'test@test.com', 'test', '1111-01-01');
+(34, 'test', 'test', 'test@test.com', 'test', '1111-01-01'),
+(35, 'try', 'try', 'pepe@pepe.cpm', 'try', '2000-01-01');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `perfumes`
+--
+ALTER TABLE `perfumes`
+  ADD PRIMARY KEY (`id_perf`);
 
 --
 -- Indices de la tabla `users`
@@ -61,7 +100,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
