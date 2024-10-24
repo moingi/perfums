@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-10-2024 a las 15:27:13
+-- Tiempo de generación: 24-10-2024 a las 15:09:59
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -22,6 +22,26 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `db_perfums` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `db_perfums`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `marcas`
+--
+
+DROP TABLE IF EXISTS `marcas`;
+CREATE TABLE `marcas` (
+  `id_marcas` int(255) NOT NULL,
+  `name_marca` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `marcas`
+--
+
+INSERT INTO `marcas` (`id_marcas`, `name_marca`) VALUES
+(2, 'Carolina Herrera'),
+(1, 'Jean Paul Gaultier');
 
 -- --------------------------------------------------------
 
@@ -45,12 +65,12 @@ CREATE TABLE `perfumes` (
 --
 
 INSERT INTO `perfumes` (`id_perf`, `name_perf`, `marca_perf`, `disenador_perf`, `genero_perf`, `imagen_perf`, `precio_perf`) VALUES
-(1, 'Jean Paul', 'JPG', 'Jean', 'woman', 'pruebas.png', '0'),
-(2, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
-(3, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
-(4, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
-(5, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
-(6, 'Bad Boy Le Perfum', 'Carolina herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0');
+(1, 'Jean Paul', 'Jean Paul Gaultier', 'Jean', 'woman', 'pruebas.png', '0'),
+(2, 'Bad Boy Le Perfum', 'Carolina Herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(3, 'Bad Boy Le Perfum', 'Carolina Herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(4, 'Bad Boy Le Perfum', 'Carolina Herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(5, 'Bad Boy Le Perfum', 'Carolina Herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0'),
+(6, 'Bad Boy Le Perfum', 'Carolina Herrera', 'Quentin Bisch', 'man', 'pruebas.png', '0');
 
 -- --------------------------------------------------------
 
@@ -81,10 +101,18 @@ INSERT INTO `users` (`id`, `nombre`, `lastname`, `mail`, `passwd`, `fecha_nacimi
 --
 
 --
+-- Indices de la tabla `marcas`
+--
+ALTER TABLE `marcas`
+  ADD PRIMARY KEY (`id_marcas`),
+  ADD KEY `name_marca` (`name_marca`);
+
+--
 -- Indices de la tabla `perfumes`
 --
 ALTER TABLE `perfumes`
-  ADD PRIMARY KEY (`id_perf`);
+  ADD PRIMARY KEY (`id_perf`),
+  ADD KEY `fk_perfumes_marcas` (`marca_perf`);
 
 --
 -- Indices de la tabla `users`
@@ -101,6 +129,16 @@ ALTER TABLE `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `perfumes`
+--
+ALTER TABLE `perfumes`
+  ADD CONSTRAINT `fk_perfumes_marcas` FOREIGN KEY (`marca_perf`) REFERENCES `marcas` (`name_marca`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
