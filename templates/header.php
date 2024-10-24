@@ -43,7 +43,7 @@
     <ul>
       <li><a href="/listado?categoria=man">Hombre</a></li>
       <li><a href="/listado?categoria=woman">Mujer</a></li>
-      <li><a href="/listado">Perfumes</a></li>
+      <li><a href="/listado">Temporada</a></li>
       <li><a href="/listado">Marcas</a></li>
       <li><a href="#contact">Tienda</a></li>
     </ul>

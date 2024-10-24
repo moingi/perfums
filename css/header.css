@@ -106,7 +106,7 @@ header form{
     justify-content: center !important;
     margin-top: 2rem;
 }
-.navbar ul {
+.navbar > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;

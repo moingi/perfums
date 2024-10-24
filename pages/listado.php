@@ -19,11 +19,14 @@
             <h1>Productos</h1>
             <div class="d-flex">
                 <div class="w-25 p-3 m-5 h-auto d-inline-block bg-secondary">
-
+                    <h5>Búsqueda por filtros</h5>
+                    <!-- Crear con AJAX (Preguntar a Roger) -->
+                    <p><input type="checkbox">
+                    Jean Paul Gaultier</p>
                 </div>
                 <div class="w-75 p-3 m-5 d-flex justify-content-center h-auto d-inline-block bg-primary row">
                     <?php
-                        $categoria=$_GET["categoria"];
+                        $categoria = $_GET["categoria"];
 
                         require __DIR__ . '/../db/connect.php';
 
@@ -53,7 +56,6 @@
                         //     var_dump($elemento);
                         //     echo "<br><br>";
                         // };
-                    
                     ?>
                 </div>
             </div>
